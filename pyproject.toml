@@ -1,0 +1,21 @@
+[project]
+name = "quick-exec-mcp"
+version = "1.0.0"
+description = "MCP server that gives Amazon Quick real shell access to the host, outside its sandbox"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "mcp>=1.0.0,<2",
+]
+
+[project.scripts]
+quick-exec-mcp = "exec_mcp_server:main_sync"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["exec_mcp_server.py"]
+sources = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
