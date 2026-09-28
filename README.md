@@ -1,4 +1,4 @@
-# quick-exec-mcp — a real shell for Amazon Quick
+# amazon-quick-exec-mcp — a real shell for Amazon Quick
 
 [中文](README.zh-CN.md)
 
